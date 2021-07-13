@@ -5,7 +5,7 @@ Once the waterbucket is full and the float switch is triggered, the pump will be
 ![Sketch of the circuit](DehumidifierPumpController.png)
 
 Used components:
-- 1x [Float Switch](https://s.click.aliexpress.com/e/_Ak53mK)
+- 1x [Float Switch](https://s.click.aliexpress.com/e/_Ak53mK) or [Float Switch](https://s.click.aliexpress.com/e/_AsYxA2)
 - 1x [Water Pump](https://www.aliexpress.com/item/32859594599.html?spm=a2g0s.9042311.0.0.27424c4dypXzoO)
 - 1x [5V Relay](https://www.aliexpress.com/item/32358134833.html?spm=a2g0s.9042311.0.0.27424c4dyynnLY)
 - 1x [Arduino Uno R3](https://www.aliexpress.com/item/32831857482.html?spm=a2g0o.productlist.0.0.19f16140AZZgOJ&aem_p4p_detail=202107131539031573662234321060028453385)
