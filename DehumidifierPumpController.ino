@@ -1,11 +1,11 @@
 // constants won't change. They're used here to set pin numbers:
-const int waterSensorPin = 2;// the number of the water sensor pin
+const int waterSensorPin = 2; // the number of the water sensor pin
 const int ledPin =  13; // the number of the LED pin
-const int relayPin = 7;    // for pump relayPin
+const int relayPin = 7; // for pump relayPin
 
 
 // variables that will change:
-int waterSensorState = 0;    // variable for reading the water sensor status
+int waterSensorState = 0; // variable for reading the water sensor status
 int delayTime = 102000;
 
 void setup() {
