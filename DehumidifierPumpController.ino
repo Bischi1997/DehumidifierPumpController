@@ -1,19 +1,20 @@
 // constants won't change. They're used here to set pin numbers:
 const int waterSensorPin = 2;// the number of the water sensor pin
 const int ledPin =  13; // the number of the LED pin
-const int relay = 7;    // for pump relay
+const int relayPin = 7;    // for pump relayPin
 
 
 // variables that will change:
 int waterSensorState = 0;    // variable for reading the water sensor status
+int delayTime = 102000;
 
 void setup() {
   // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
   // initialize the pushbutton pin as an input:
   pinMode(waterSensorPin, INPUT);
-  // initialize the relay pin:
-  pinMode(relay, OUTPUT);
+  // initialize the relayPin pin:
+  pinMode(relayPin, OUTPUT);
 }
 
 void loop() {
@@ -23,13 +24,13 @@ void loop() {
   if (waterSensorState == HIGH) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
-    // turn Pump on for 102s:
-    digitalWrite(relay, HIGH);
-    delay(102000);
+    // turn Pump on for defined time:
+    digitalWrite(relayPin, HIGH);
+    delay(delayTime);
   } else {
     // turn LED off:
     digitalWrite(ledPin, LOW);
     // turn Pump off:
-    digitalWrite(relay, LOW);
+    digitalWrite(relayPin, LOW);
   }
 }
